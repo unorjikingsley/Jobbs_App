@@ -11,11 +11,11 @@ const DashboardLayout = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
-  const toogleDarkTheme = () => {
-    console.log('toogle dark theme');
+  const toggleDarkTheme = () => {
+    console.log('toggle dark theme');
   }
 
-  const toogleSidebar = () => {
+  const toggleSidebar = () => {
     setShowSidebar(!showSidebar)
   };
 
@@ -24,13 +24,13 @@ const DashboardLayout = () => {
   }
 
   return (
-    <DashboardContext.provider
+    <DashboardContext.Provider
       value = {{
         user,
         showSidebar,
         isDarkTheme,
-        toogleDarkTheme,
-        toogleSidebar,
+        toggleDarkTheme,
+        toggleSidebar,
         logoutUser,
       }}
     >
@@ -46,9 +46,9 @@ const DashboardLayout = () => {
           </div>
         </main>
       </Wrapper>
-    </DashboardContext.provider>
+    </DashboardContext.Provider>
   );
 };
 
 export const useDashboardContext = () => useContext(DashboardContext);
-export default DashboardLayout
+export default DashboardLayout;

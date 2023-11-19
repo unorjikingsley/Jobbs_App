@@ -13,6 +13,7 @@ const Wrapper = styled.nav`
     align-items: center;
     justify-content: space-between;
   }
+
   .toggle-btn {
     background: transparent;
     border-color: transparent;
@@ -22,30 +23,37 @@ const Wrapper = styled.nav`
     display: flex;
     align-items: center;
   }
+
   .logo-text {
     display: none;
   }
+
   .logo {
     display: flex;
     align-items: center;
     width: 100px;
   }
+
   .btn-container {
     display: flex;
     align-items: center;
   }
+
   @media (min-width: 992px) {
     position: sticky;
     top: 0;
     .nav-center {
       width: 90%;
     }
+
     .logo {
       display: none;
     }
+
     .logo-text {
       display: block;
     }
   }
 `;
+
 export default Wrapper;
