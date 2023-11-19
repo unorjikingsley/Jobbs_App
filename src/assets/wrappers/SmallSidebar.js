@@ -65,7 +65,7 @@ const Wrapper = styled.aside`
     color: var(--primary-500);
   }
 
-  .icon {
+  .icons {
     font-size: 1.5rem;
     margin-right: 1rem;
     display: grid;
